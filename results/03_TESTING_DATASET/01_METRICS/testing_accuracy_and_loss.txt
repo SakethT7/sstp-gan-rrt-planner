@@ -1,0 +1,34 @@
+DATASET: TESTING
+
+GENERATOR:
+- Best-of full-state accuracy: 100.000000%
+- Deterministic full-state accuracy: 100.000000%
+- Best-of full-state MSE loss: 0.000004200889
+- Deterministic full-state MSE loss: 0.000005381207
+- Best-of position accuracy: 100.000000%
+- Deterministic position accuracy: 100.000000%
+- Best-of velocity accuracy: 99.983333%
+- Deterministic velocity accuracy: 99.983333%
+- Deterministic position accuracy @ 0.005: 100.000000%
+- Deterministic position accuracy @ 0.010: 100.000000%
+- Deterministic velocity accuracy @ 0.025: 99.833333%
+- Deterministic velocity accuracy @ 0.050: 99.983333%
+- Best-of mean full-state error: 0.002329086885
+- Deterministic mean full-state error: 0.002866806695
+- Best-of p95 full-state error: 0.008911318146
+- Deterministic p95 full-state error: 0.009977648035
+- Mean random-candidate deviation from deterministic state: 0.000361198113
+
+IMPORTANT METRIC INTERPRETATION:
+Best-of is an oracle diagnostic: it uses the true label to identify the closest candidate after generation. Deterministic accuracy is the honest single-output deployment metric. The candidate-deviation value reveals whether noise actually creates distinct choices or whether the generator has collapsed to one output. Exact normalized and physical-unit threshold definitions are in METRIC_DEFINITIONS.json.
+
+DISCRIMINATOR:
+- Final discriminator accuracy: 50.000000%
+- Final discriminator BCE loss: 0.693147181034
+A discriminator near 50% can be consistent with a strong generator; higher discriminator accuracy is not automatically better GAN performance.
+
+V7 CONDITION AND OUTPUT:
+Condition: [parent_x,parent_y,parent_vx,parent_vy,sample_x,sample_y,absolute_obstacle_x_y_r...]
+Generator output: [delta_x,delta_y,next_vx,next_vy]
+Full state: [parent_x+delta_x,parent_y+delta_y,next_vx,next_vy].
+The network predicts the two-component one-step velocity increment. Position and next velocity are then generated together by the exact constant-acceleration dynamics, so displacement error is never amplified by 2/dt to create velocity.

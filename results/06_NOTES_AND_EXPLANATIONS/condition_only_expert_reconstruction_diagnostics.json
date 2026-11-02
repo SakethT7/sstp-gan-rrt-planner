@@ -1,0 +1,22 @@
+{
+  "training": {
+    "rows": 48000,
+    "failed_qp_reconstructions": 0,
+    "condition_only_position_accuracy_percent": 100.0,
+    "condition_only_velocity_accuracy_percent": 100.0,
+    "condition_only_full_state_accuracy_percent": 100.0,
+    "condition_only_mean_full_state_error": 4.9394308962338653e-08,
+    "condition_only_p95_full_state_error": 1.1525839894468555e-07,
+    "condition_only_max_full_state_error": 6.703401129336244e-07
+  },
+  "validation": {
+    "rows": 6000,
+    "failed_qp_reconstructions": 0,
+    "condition_only_position_accuracy_percent": 100.0,
+    "condition_only_velocity_accuracy_percent": 100.0,
+    "condition_only_full_state_accuracy_percent": 100.0,
+    "condition_only_mean_full_state_error": 4.8425056019162436e-08,
+    "condition_only_p95_full_state_error": 1.1209971765904184e-07,
+    "condition_only_max_full_state_error": 3.3046530158227863e-07
+  }
+}

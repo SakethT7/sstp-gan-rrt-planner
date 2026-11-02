@@ -1,0 +1,23 @@
+{
+  "gallery_version": "2.0.0-compact-decimals-expanded-real-data-only",
+  "figures": 46,
+  "png_figures": 46,
+  "svg_figures": 46,
+  "figure_data_csv_files": 46,
+  "path_images": 45,
+  "every_figure_has_data": true,
+  "source_data": [
+    "FINAL_METRICS.json",
+    "training_history.csv",
+    "final_discriminator_training_log.csv",
+    "all_rollout_cases.csv",
+    "testing_gan_vs_classical_paired_comparison.json"
+  ],
+  "fabricated_values": false,
+  "display_precision_policy": {
+    "percentages_decimal_places": 2,
+    "ordinary_values_max_decimal_places": 2,
+    "small_errors_and_losses": "scientific notation",
+    "source_csv_json_precision_modified": false
+  }
+}

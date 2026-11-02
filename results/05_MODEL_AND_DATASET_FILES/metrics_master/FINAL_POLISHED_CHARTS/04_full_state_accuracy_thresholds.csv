@@ -1,0 +1,4 @@
+split,full_state_accuracy_at_0_05_percent,full_state_accuracy_at_0_10_percent
+training,99.98333333333333,100.0
+validation,100.0,100.0
+testing,99.98333333333333,100.0

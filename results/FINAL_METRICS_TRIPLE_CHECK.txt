@@ -1,0 +1,37 @@
+V7 STRICT RRT-SAMPLE GAN METRICS
+
+TRAINING
+- Generator best-of full-state accuracy: 100.000000%
+- Generator deterministic full-state accuracy: 100.000000%
+- Generator deterministic position accuracy: 100.000000%
+- Generator deterministic velocity accuracy: 99.983333%
+- Generator best-of full-state MSE loss: 0.000003807261
+- Generator deterministic full-state MSE loss: 0.000004899363
+- Generator best-of position accuracy: 100.000000%
+- Generator best-of velocity accuracy: 99.983333%
+- Final discriminator accuracy: 50.000000%
+- Final discriminator BCE loss: 0.693147188822
+
+VALIDATION
+- Generator best-of full-state accuracy: 100.000000%
+- Generator deterministic full-state accuracy: 100.000000%
+- Generator deterministic position accuracy: 100.000000%
+- Generator deterministic velocity accuracy: 100.000000%
+- Generator best-of full-state MSE loss: 0.000004214413
+- Generator deterministic full-state MSE loss: 0.000005445093
+- Generator best-of position accuracy: 100.000000%
+- Generator best-of velocity accuracy: 100.000000%
+- Final discriminator accuracy: 50.000000%
+- Final discriminator BCE loss: 0.693147187551
+
+TESTING
+- Generator best-of full-state accuracy: 100.000000%
+- Generator deterministic full-state accuracy: 100.000000%
+- Generator deterministic position accuracy: 100.000000%
+- Generator deterministic velocity accuracy: 99.983333%
+- Generator best-of full-state MSE loss: 0.000004200889
+- Generator deterministic full-state MSE loss: 0.000005381207
+- Generator best-of position accuracy: 100.000000%
+- Generator best-of velocity accuracy: 99.983333%
+- Final discriminator accuracy: 50.000000%
+- Final discriminator BCE loss: 0.693147181034

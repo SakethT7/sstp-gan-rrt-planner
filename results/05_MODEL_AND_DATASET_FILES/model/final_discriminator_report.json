@@ -1,0 +1,10 @@
+{
+  "step": 3000,
+  "training_accuracy": 50.0,
+  "training_loss": 0.6931471824645996,
+  "validation_accuracy": 50.0,
+  "validation_loss": 0.6931471875508626,
+  "testing_accuracy": 50.0,
+  "testing_loss": 0.6931471810340881,
+  "selection_used_testing_split": false
+}

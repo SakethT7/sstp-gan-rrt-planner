@@ -1,0 +1,4 @@
+split,deterministic_full_state_accuracy_percent,bestof_full_state_accuracy_percent
+training,100.0,100.0
+validation,100.0,100.0
+testing,100.0,100.0

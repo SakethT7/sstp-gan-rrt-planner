@@ -1,0 +1,37 @@
+V7.7 FINAL RESULTS GALLERY
+==========================
+
+All figures are generated from recorded final metrics and rollout data.
+No values, paths, successes, or failures are fabricated.
+
+TRAINING
+  deterministic position accuracy: 100.00%
+  deterministic velocity accuracy: 99.98%
+  deterministic full-state accuracy: 100.00%
+  mean velocity error: 2.67e-03
+  p95 velocity error: 9.29e-03
+
+VALIDATION
+  deterministic position accuracy: 100.00%
+  deterministic velocity accuracy: 100.00%
+  deterministic full-state accuracy: 100.00%
+  mean velocity error: 2.86e-03
+  p95 velocity error: 9.82e-03
+
+TESTING
+  deterministic position accuracy: 100.00%
+  deterministic velocity accuracy: 99.98%
+  deterministic full-state accuracy: 100.00%
+  mean velocity error: 2.87e-03
+  p95 velocity error: 9.98e-03
+
+Package verification status: targets_reached
+Testing rollout solve rate: 99.00%
+Generator share of accepted nodes: 86.42%
+Numbered data figures: 46
+Real rollout path images: 45
+
+Interpretation boundary:
+Accuracy is the percentage of rows within a stated error threshold; it is not exact equality.
+Best-of is an oracle diagnostic. Deterministic metrics are the deployable metrics.
+The final discriminator is a distribution-balance audit, not a motion-accuracy score.

@@ -1,0 +1,7 @@
+split,termination_reason,failed_cases
+training,max_iterations,2
+validation,max_iterations,1
+testing,max_iterations,3
+training,max_nodes,1
+validation,max_nodes,1
+testing,max_nodes,0

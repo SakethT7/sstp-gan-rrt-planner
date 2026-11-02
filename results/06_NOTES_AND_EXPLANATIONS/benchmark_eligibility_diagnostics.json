@@ -1,0 +1,38 @@
+{
+  "training": {
+    "rows": 48000,
+    "invalid_start": 71,
+    "invalid_goal": 0,
+    "trivial_start_within_goal_radius": 2548,
+    "valid_nontrivial": 45381,
+    "invalid_start_percent": 0.14791666666666667,
+    "invalid_goal_percent": 0.0,
+    "trivial_start_within_goal_radius_percent": 5.308333333333334,
+    "valid_nontrivial_percent": 94.54375,
+    "benchmark_policy": "Only valid_nontrivial scenarios enter solve-rate and difficulty benchmarks; invalid and zero-iteration trivial rows are reported separately."
+  },
+  "validation": {
+    "rows": 6000,
+    "invalid_start": 0,
+    "invalid_goal": 0,
+    "trivial_start_within_goal_radius": 292,
+    "valid_nontrivial": 5708,
+    "invalid_start_percent": 0.0,
+    "invalid_goal_percent": 0.0,
+    "trivial_start_within_goal_radius_percent": 4.866666666666666,
+    "valid_nontrivial_percent": 95.13333333333334,
+    "benchmark_policy": "Only valid_nontrivial scenarios enter solve-rate and difficulty benchmarks; invalid and zero-iteration trivial rows are reported separately."
+  },
+  "testing": {
+    "rows": 6000,
+    "invalid_start": 16,
+    "invalid_goal": 0,
+    "trivial_start_within_goal_radius": 352,
+    "valid_nontrivial": 5632,
+    "invalid_start_percent": 0.26666666666666666,
+    "invalid_goal_percent": 0.0,
+    "trivial_start_within_goal_radius_percent": 5.866666666666666,
+    "valid_nontrivial_percent": 93.86666666666666,
+    "benchmark_policy": "Only valid_nontrivial scenarios enter solve-rate and difficulty benchmarks; invalid and zero-iteration trivial rows are reported separately."
+  }
+}

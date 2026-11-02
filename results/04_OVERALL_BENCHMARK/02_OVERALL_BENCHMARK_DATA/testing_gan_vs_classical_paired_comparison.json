@@ -1,0 +1,16 @@
+{
+  "paired_testing_cases": 300,
+  "same_row_indices_and_seeds": true,
+  "both_solved": 297,
+  "gan_only_solved": 0,
+  "classical_only_solved": 0,
+  "neither_solved": 3,
+  "gan_solve_rate_percent": 99.0,
+  "classical_solve_rate_percent": 99.0,
+  "gan_minus_classical_solve_rate_percentage_points": 0.0,
+  "mean_gan_path_cost_on_both_solved": 0.5638885180674014,
+  "mean_classical_path_cost_on_both_solved": 0.5813258673403073,
+  "mean_gan_runtime_seconds_all_cases": 5.821539175497019,
+  "mean_classical_runtime_seconds_all_cases": 0.11786124373650333,
+  "interpretation": "This is a paired ablation on identical held-out valid nontrivial rows. The classical baseline uses the same sampling, nearest-parent, limits, goal region, attempts, and collision checks, but only steers directly toward each RRT sample and never calls the GAN or discriminator."
+}

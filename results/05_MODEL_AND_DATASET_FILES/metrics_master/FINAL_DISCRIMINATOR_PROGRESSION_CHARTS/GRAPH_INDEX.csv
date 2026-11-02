@@ -1,0 +1,3 @@
+order,title,caption,png,svg,data_csv
+1,Final discriminator accuracy progression,"Training and validation classification accuracy for the frozen-generator audit. Approximately 50% is a balance diagnostic, not motion accuracy.",01_final_discriminator_accuracy.png,01_final_discriminator_accuracy.svg,01_final_discriminator_accuracy.csv
+2,Final discriminator BCE loss progression,Binary cross-entropy for real-versus-generated classification with the generator frozen.,02_final_discriminator_loss.png,02_final_discriminator_loss.svg,02_final_discriminator_loss.csv

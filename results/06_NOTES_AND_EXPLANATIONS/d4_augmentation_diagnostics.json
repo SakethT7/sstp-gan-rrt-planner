@@ -1,0 +1,11 @@
+{
+  "rows_checked": 512,
+  "symmetries_checked": 8,
+  "maximum_orthogonality_error": 0.0,
+  "maximum_sample_distance_error": 1.1920928955078125e-07,
+  "maximum_speed_error": 0.0,
+  "maximum_transformed_vector_error": 5.960464477539063e-08,
+  "maximum_round_trip_error": 4.284083843231201e-08,
+  "padding_obstacles_preserved": true,
+  "validation_and_testing_augmented": false
+}

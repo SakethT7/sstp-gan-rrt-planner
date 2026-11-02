@@ -1,0 +1,48 @@
+Run these ONE AT A TIME in WSL. Do not paste terminal output back into WSL.
+
+1. PREFLIGHT
+bash "$HOME/V7_7_GENERALIZATION_SOURCE/v7_7.sh" preflight
+
+2. START NEW TRAINING
+bash "$HOME/V7_7_GENERALIZATION_SOURCE/v7_7.sh" train
+
+3. CHECK STATUS AT ANY TIME
+bash "$HOME/V7_7_GENERALIZATION_SOURCE/v7_7.sh" status
+
+4. VIEW THE LIVE LOG (Ctrl+C only exits the viewer)
+bash "$HOME/V7_7_GENERALIZATION_SOURCE/v7_7.sh" watch
+
+5. ONLY IF THE COMPUTER INTERRUPTED TRAINING
+bash "$HOME/V7_7_GENERALIZATION_SOURCE/v7_7.sh" resume
+
+6. ONLY AFTER TRAINING FINISHES AND deployable_validation_target_reached IS True
+bash "$HOME/V7_7_GENERALIZATION_SOURCE/v7_7.sh" finalize
+
+7. CHECK THE COMPLETE FINAL PIPELINE
+bash "$HOME/V7_7_GENERALIZATION_SOURCE/v7_7.sh" final-status
+
+8. WATCH THE COMPLETE FINAL PIPELINE (Ctrl+C only exits the viewer)
+bash "$HOME/V7_7_GENERALIZATION_SOURCE/v7_7.sh" final-watch
+
+The finalize command now performs everything automatically:
+- held-out testing metrics
+- final discriminator audit
+- 900 generator-steered RRT benchmark cases
+- 300 paired classical-RRT testing cases
+- real easy/medium/hard path images
+- numbered PNG and SVG graphs
+- an exact CSV beside every graph
+- source-code and checkpoint preservation
+- integrity checks, manifest, and ZIP creation
+
+FINAL FOLDER:
+$HOME/V7_7_GENERALIZATION_GAN_FINAL
+
+FINAL ZIP:
+$HOME/V7_7_GENERALIZATION_GAN_FINAL.zip
+
+9. OPTIONAL SECOND SET OF PATH PICTURES AFTER FINALIZATION
+bash "$HOME/V7_7_GENERALIZATION_SOURCE/v7_7.sh" pictures
+
+10. REPEAT THE INDEPENDENT FINAL INTEGRITY AUDIT AT ANY TIME
+bash "$HOME/V7_7_GENERALIZATION_SOURCE/v7_7.sh" verify

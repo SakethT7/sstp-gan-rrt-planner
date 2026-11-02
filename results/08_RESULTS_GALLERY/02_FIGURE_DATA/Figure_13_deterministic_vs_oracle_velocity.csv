@@ -1,0 +1,4 @@
+split,deterministic_velocity_accuracy_percent,bestof_velocity_accuracy_percent
+training,99.98333333333333,99.98333333333333
+validation,100.0,100.0
+testing,99.98333333333333,99.98333333333333

@@ -1,0 +1,12 @@
+[
+  {
+    "file": "V7_7_FINAL_TRAINING_CHECKPOINT.pt",
+    "sha256": "c698b0488173f6929e4c839e16bfb28024f275b120d2be5cd980f1664c435936",
+    "size_bytes": 12274536
+  },
+  {
+    "file": "V7_7_FINAL_DISCRIMINATOR_CHECKPOINT.pt",
+    "sha256": "0a5959452af8d38b6aeef1c835567389a4136c41ff5502b5eb41025a4923c452",
+    "size_bytes": 16269450
+  }
+]

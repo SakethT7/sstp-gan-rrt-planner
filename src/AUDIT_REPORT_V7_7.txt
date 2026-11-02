@@ -1,0 +1,86 @@
+V7.7 SOURCE AUDIT REPORT
+========================
+
+COMPLETED LOCAL CHECKS
+----------------------
+PASS - All three Python files compile with Python's bytecode compiler.
+PASS - The protected shell launcher passes bash -n syntax validation.
+PASS - Exactly one LocalMotionGenerator definition exists.
+PASS - The legacy cond[:, 0:6] learned-trunk input is absent.
+PASS - The legacy flattened absolute-coordinate trunk and residual experts are
+       absent.
+PASS - Generator output is reconstructed only through the exact one-step
+       control-consistent dynamics function.
+PASS - Legacy V7.5/V7.6 warm starts are explicitly rejected.
+PASS - V7.7 forces hard_example_fraction to zero.
+PASS - Validation checkpoint scoring uses only deterministic full-state,
+       position, and velocity validation metrics. Best-of and discriminator
+       values cannot alter selection.
+PASS - Epoch 0 (the nominal LQR controller) is validation-evaluated and remains
+       selectable if optimization does not improve it.
+PASS - Final discriminator training, test reporting, rollout benchmarking,
+       pictures, and packaging occur only after the validation-target guard.
+PASS - Complete finalization runs held-out evaluation, paired rollout
+       benchmarking, real path rendering, chart generation, verification, and
+       archiving in one protected background pipeline.
+PASS - Empirical elapsed time and ETA are reported every 10 rollout cases,
+       every rendered path, every gallery stage, and every finalization stage.
+PASS - Every gallery figure is written as a 300-DPI PNG and vector SVG with a
+       one-to-one corresponding CSV data table and indexed caption.
+PASS - The final package preserves the complete source suite, validation-
+       selected deployable model, resumable training checkpoint, final
+       discriminator checkpoint, commands, environment versions, and hashes.
+PASS - Results-gallery code reads only recorded FINAL_METRICS.json, validation
+       history, final-discriminator history, rollout CSVs, and paired-comparison
+       JSON. It contains no hard-coded research result values.
+PASS - An independent read-only final auditor verifies every disk and ZIP hash,
+       900 learned-planner cases, 300 paired classical cases, exact difficulty
+       counts, zero accepted collision violations, one-child RRT contracts,
+       at least 25 numbered data figures, 45 real route images, exact source
+       preservation, model/checkpoint presence, and all figure/data links.
+PASS - The independent auditor passed an end-to-end synthetic structure test
+       with 900+300 rows, 25 figure triplets, 45 path records, a complete
+       manifest, and a rebuilt ZIP. Synthetic values exist only in temporary
+       self-tests and are never copied into a research package.
+PASS - Pre-final representation, ambiguity, target-progress, and label/dynamics
+       summaries explicitly exclude testing labels.
+PASS - The strict dataset generator is byte-for-byte unchanged from the audited
+       source; SHA-256:
+       52171501fa963fbf981cb0d0612ec6c9f93f8e0f827484a51060c84710bcc4fd
+
+NUMERICAL TESTS ON THE AVAILABLE STRICT DATASET COPY
+----------------------------------------------------
+PASS - 8/8 D4 square symmetries tested on 512 rows.
+PASS - Maximum orthogonality error: 0.
+PASS - Maximum sample-distance preservation error: 7.4505806e-08.
+PASS - Maximum speed preservation error: 0.
+PASS - Maximum transformed-vector error: 7.4505806e-08.
+PASS - Maximum D4 round-trip error: 4.0978193e-08.
+PASS - Padded obstacle triples remained exactly zero.
+PASS - Symmetry-balanced target normalization preserved each transformed
+       target's squared normalized magnitude within 2.5749207e-05.
+PASS - D4-transformed labels reconstructed through exact dynamics with maximum
+       normalized velocity error 1.4756604e-05.
+PASS - The exact encoded-condition LQR-CBF teacher reconstructed all 1,920
+       transformed training rows and all 240 transformed validation rows at
+       100% position, velocity, and full-state threshold accuracy, with zero QP
+       failures and maximum full-state error 3.5205334e-07.
+PASS - Constraint-token feasibility matched direct physical CBF/QP feasibility
+       on all 2,160 checked rows. Expert controls satisfied the tokenized
+       inequalities within float32 tolerance.
+
+RUNTIME CHECK THAT MUST RUN IN THE USER'S PYTORCH ENVIRONMENT
+-------------------------------------------------------------
+This workspace does not contain PyTorch, so it cannot honestly execute the
+neural forward/backward pass. The required preflight command runs that check in
+the user's lqr_cbf_env before training. It verifies finite generator and
+discriminator outputs, nonzero finite gradients, exact dynamics, arbitrary-
+weight D4 equivariance, and obstacle-permutation invariance. Training must not
+start unless preflight prints both MODEL SMOKE TEST PASSED and PREFLIGHT PASSED.
+
+RESULT LIMIT
+------------
+These checks establish code, data-contract, symmetry, safety, selection, and
+leakage correctness. They do not fabricate or guarantee an unobserved 98%
+validation result. The experiment must be run, and the deterministic validation
+statistics must decide whether the target was achieved.

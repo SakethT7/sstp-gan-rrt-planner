@@ -1,0 +1,19 @@
+WHAT THIS PROJECT TAUGHT
+
+Important concepts covered by this project:
+- motion planning
+- geometric vs kinodynamic planning
+- state representation [x,y,vx,vy]
+- RRT tree expansion
+- parent-pointer path reconstruction
+- collision checking along an edge
+- sample-conditioned LQR-CBF basic RRT as an expert teacher
+- conditional GANs
+- generator and discriminator roles
+- generator noise and candidate diversity
+- supervised pretraining vs adversarial fine tuning
+- final discriminator classifier training
+- PyTorch tensors, modules, losses, optimizers, training loops, and checkpoints
+- diagnostics for finding bottlenecks
+- why position accuracy and full-state accuracy differ
+- why honest train/validation/test separation matters

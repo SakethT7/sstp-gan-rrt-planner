@@ -1,0 +1,22 @@
+WHAT CHANGED IN V7
+
+V6 trained mostly on final-goal-conditioned path transitions because the old
+dataset did not retain the exact RRT random sample that caused each expansion.
+V7 regenerates every supervised row at the tree insertion boundary: exact
+sample, exact Euclidean-nearest parent, and exact accepted LQR-CBF child.
+
+The old source encoded obstacle centers relative to the current state, but its
+augmentation and rollout code treated them as absolute coordinates. Four of
+five augmented copies were therefore geometrically wrong. V7 uses one explicit
+schema—absolute normalized center_x, center_y, radius—and validates/reorders it
+nearest-first at every rollout node.
+
+V7 splits whole environments before training, refuses legacy datasets, keeps
+testing out of checkpoint selection, marks best-of as oracle-only, and lets only
+deterministic full-state, position, and velocity metrics certify the requested
+accuracy target. The discriminator is diagnostic and cannot certify generator
+quality.
+
+The final held-out benchmark runs a paired classical basic-RRT baseline with
+the same rows, samples, seeds, limits, attempts, goal region, and collision
+checks. Learned-steering benefit is measured rather than assumed.

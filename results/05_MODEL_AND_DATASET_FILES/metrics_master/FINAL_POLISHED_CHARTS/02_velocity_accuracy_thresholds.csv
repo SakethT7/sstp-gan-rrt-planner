@@ -1,0 +1,4 @@
+split,velocity_accuracy_at_0_025_percent,velocity_accuracy_at_0_05_percent,velocity_accuracy_at_0_10_percent
+training,99.83958333333334,99.98333333333333,100.0
+validation,99.83333333333333,100.0,100.0
+testing,99.83333333333333,99.98333333333333,100.0

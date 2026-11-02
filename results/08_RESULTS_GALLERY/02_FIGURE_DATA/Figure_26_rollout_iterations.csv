@@ -1,0 +1,10 @@
+split,difficulty,cases,value
+training,easy,100,84.88
+training,medium,100,189.13
+training,hard,100,343.06
+validation,easy,100,98.64
+validation,medium,100,137.05
+validation,hard,100,309.24
+testing,easy,100,215.84
+testing,medium,100,133.97
+testing,hard,100,233.67

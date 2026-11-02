@@ -1,0 +1,4 @@
+split,solve_rate_percent,cluster_bootstrap_95_low_percent,cluster_bootstrap_95_high_percent,environment_clusters
+training,99.0,97.67383330732012,100.0,176
+validation,99.33333333333333,98.32747767530375,100.0,30
+testing,99.0,96.71502767305687,100.0,30

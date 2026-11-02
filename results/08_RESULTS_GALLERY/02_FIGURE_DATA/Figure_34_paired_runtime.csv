@@ -1,0 +1,3 @@
+planner,mean_runtime_seconds
+Generator-steered RRT,5.821539175497019
+Classical direct-steering RRT,0.11786124373650333

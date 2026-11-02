@@ -1,0 +1,13 @@
+split,rejection_type,mean_count
+training,Collision/boundary,4160.44
+validation,Collision/boundary,2279.883333333333
+testing,Collision/boundary,4919.696666666667
+training,Duplicate,1413.5566666666666
+validation,Duplicate,1445.59
+testing,Duplicate,1454.47
+training,Nonfinite,0.0
+validation,Nonfinite,0.0
+testing,Nonfinite,0.0
+training,Free-sample failure,0.0
+validation,Free-sample failure,0.0
+testing,Free-sample failure,0.0

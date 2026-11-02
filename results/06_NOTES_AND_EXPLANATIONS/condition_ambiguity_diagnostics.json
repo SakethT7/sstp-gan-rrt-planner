@@ -1,0 +1,35 @@
+{
+  "training": {
+    "rounding_decimals_in_normalized_condition_space": 4,
+    "rows": 48000,
+    "repeated_condition_groups": 134,
+    "rows_in_repeated_condition_groups": 1372,
+    "conflicting_condition_groups": 0,
+    "rows_in_conflicting_condition_groups": 0,
+    "conflicting_row_percent": 0.0,
+    "worst_group_target_range_diagonal": 2.7589410819928162e-05,
+    "conflict_threshold": 0.05
+  },
+  "validation": {
+    "rounding_decimals_in_normalized_condition_space": 4,
+    "rows": 6000,
+    "repeated_condition_groups": 17,
+    "rows_in_repeated_condition_groups": 166,
+    "conflicting_condition_groups": 0,
+    "rows_in_conflicting_condition_groups": 0,
+    "conflicting_row_percent": 0.0,
+    "worst_group_target_range_diagonal": 0.0,
+    "conflict_threshold": 0.05
+  },
+  "testing": {
+    "rounding_decimals_in_normalized_condition_space": 4,
+    "rows": 6000,
+    "repeated_condition_groups": 18,
+    "rows_in_repeated_condition_groups": 146,
+    "conflicting_condition_groups": 0,
+    "rows_in_conflicting_condition_groups": 0,
+    "conflicting_row_percent": 0.0,
+    "worst_group_target_range_diagonal": 1.8199738406110555e-05,
+    "conflict_threshold": 0.05
+  }
+}

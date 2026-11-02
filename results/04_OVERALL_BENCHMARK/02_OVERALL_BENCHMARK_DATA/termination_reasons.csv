@@ -1,0 +1,15 @@
+split,difficulty,reason,count,percent
+training,easy,goal_region_reached,100,100.0
+training,medium,goal_region_reached,100,100.0
+training,hard,goal_region_reached,97,97.0
+training,hard,max_iterations,2,2.0
+training,hard,max_nodes,1,1.0
+validation,easy,goal_region_reached,99,99.0
+validation,easy,max_nodes,1,1.0
+validation,medium,goal_region_reached,100,100.0
+validation,hard,goal_region_reached,99,99.0
+validation,hard,max_iterations,1,1.0
+testing,easy,goal_region_reached,97,97.0
+testing,easy,max_iterations,3,3.0
+testing,medium,goal_region_reached,100,100.0
+testing,hard,goal_region_reached,100,100.0

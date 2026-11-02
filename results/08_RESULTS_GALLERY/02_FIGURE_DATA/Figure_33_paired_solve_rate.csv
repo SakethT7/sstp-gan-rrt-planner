@@ -1,0 +1,3 @@
+planner,solve_rate_percent
+Generator-steered RRT,99.0
+Classical direct-steering RRT,99.0

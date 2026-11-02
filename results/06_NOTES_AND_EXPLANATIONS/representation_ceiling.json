@@ -1,0 +1,32 @@
+{
+  "training": {
+    "ceiling_full_state_accuracy_0_10_percent": 100.0,
+    "ceiling_position_accuracy_0_05_percent": 100.0,
+    "ceiling_velocity_accuracy_0_05_percent": 100.0,
+    "full_state_threshold_used": 0.1,
+    "position_threshold_used": 0.05,
+    "velocity_threshold_used": 0.05,
+    "ceiling_mean_full_state_error": 0.0,
+    "ceiling_p95_full_state_error": 0.0
+  },
+  "validation": {
+    "ceiling_full_state_accuracy_0_10_percent": 100.0,
+    "ceiling_position_accuracy_0_05_percent": 100.0,
+    "ceiling_velocity_accuracy_0_05_percent": 100.0,
+    "full_state_threshold_used": 0.1,
+    "position_threshold_used": 0.05,
+    "velocity_threshold_used": 0.05,
+    "ceiling_mean_full_state_error": 0.0,
+    "ceiling_p95_full_state_error": 0.0
+  },
+  "testing": {
+    "ceiling_full_state_accuracy_0_10_percent": 100.0,
+    "ceiling_position_accuracy_0_05_percent": 100.0,
+    "ceiling_velocity_accuracy_0_05_percent": 100.0,
+    "full_state_threshold_used": 0.1,
+    "position_threshold_used": 0.05,
+    "velocity_threshold_used": 0.05,
+    "ceiling_mean_full_state_error": 0.0,
+    "ceiling_p95_full_state_error": 0.0
+  }
+}

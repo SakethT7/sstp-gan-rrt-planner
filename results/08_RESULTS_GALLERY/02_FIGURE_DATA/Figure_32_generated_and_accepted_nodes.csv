@@ -1,0 +1,7 @@
+split,quantity,mean
+training,Generated candidates,21423.96
+validation,Generated candidates,16680.5
+testing,Generated candidates,22665.453333333335
+training,Accepted nodes,173.59666666666666
+validation,Accepted nodes,170.26333333333332
+testing,Accepted nodes,139.49666666666667

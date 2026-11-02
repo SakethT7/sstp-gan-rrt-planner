@@ -1,0 +1,31 @@
+{
+  "identity_source": "generator-recorded scenario_id and environment_id",
+  "pairs": {
+    "training_vs_validation": {
+      "overlapping_scenario_ids": 0,
+      "overlapping_environment_ids": 0,
+      "left_unique_scenario_ids": 240,
+      "right_unique_scenario_ids": 30,
+      "left_rows": 48000,
+      "right_rows": 6000
+    },
+    "training_vs_testing": {
+      "overlapping_scenario_ids": 0,
+      "overlapping_environment_ids": 0,
+      "left_unique_scenario_ids": 240,
+      "right_unique_scenario_ids": 30,
+      "left_rows": 48000,
+      "right_rows": 6000
+    },
+    "validation_vs_testing": {
+      "overlapping_scenario_ids": 0,
+      "overlapping_environment_ids": 0,
+      "left_unique_scenario_ids": 30,
+      "right_unique_scenario_ids": 30,
+      "left_rows": 6000,
+      "right_rows": 6000
+    }
+  },
+  "any_overlap": false,
+  "interpretation": "Scenario overlap can make validation/testing results optimistic. V7 assigns whole environments to exactly one split."
+}

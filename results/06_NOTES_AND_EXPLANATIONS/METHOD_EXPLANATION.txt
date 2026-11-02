@@ -1,0 +1,30 @@
+V7.7 INVARIANT CONSTRAINT-ATTENTION RRT-SAMPLE GAN METHOD EXPLANATION
+
+This is a basic RRT whose local steering function is learned from expert state transitions.
+Every iteration uses this exact order:
+
+1. Sample a random free-space target (or the final goal with controlled goal bias).
+2. Select the existing tree node nearest to that sampled target.
+3. Build the GAN condition as [parent_x,parent_y,parent_vx,parent_vy,sample_x,sample_y,absolute_obstacle_x_y_r...].
+4. Generate local motion candidates with output [delta_x,delta_y,next_vx,next_vy].
+5. Convert each proposal to [parent_x+delta_x,parent_y+delta_y,next_vx,next_vy].
+6. Enforce bounded step, speed, turn, workspace, duplicate-state, and full-edge collision checks.
+7. Score valid candidates by progress toward the sampled target, clearance, smoothness, and expert-likeness.
+8. Add at most one selected node with the nearest node as its parent.
+9. Declare success only when that single node enters the goal region; never append a multi-node connector chain.
+
+The sampled target used for nearest-parent selection is exactly the sampled target given to the GAN. The GAN never continues using the final goal when RRT selected a different target.
+
+The network's primary learned action is the two-component one-step velocity increment. The full output is reconstructed as delta_position=(parent_velocity+0.5*delta_velocity)*dt and next_velocity=clip(parent_velocity+delta_velocity). This enforces the verified expert dynamics without amplifying a learned displacement error by 2/dt.
+
+V7.7 starts from scratch because the previous absolute-coordinate network fit training environments almost perfectly but did not generalize to held-out environments. Learned layers never receive raw absolute parent/sample coordinates or a flattened ordered obstacle map. Motion is expressed in the sample-aligned frame. Every obstacle, workspace boundary, and acceleration limit is encoded as a shared CBF/QP inequality token containing its local normal, bound, nominal-control slack, clearance, and type. Attention, mean pooling, and max pooling aggregate this token set without depending on obstacle order.
+
+The learned output is a correction to the documented label-free nominal LQR control. A paired parity evaluation enforces reflection equivariance for arbitrary weights, while the sample frame enforces rotation equivariance. Random exact D4 square rotations/reflections are also applied to training rows. Validation and testing are never augmented. The generator is smaller and uses AdamW regularization. Aggressive hard-example oversampling is disabled by default because it previously improved training error while validation remained flat.
+
+Validation alone selects checkpoints; testing remains held out. The 98% target is a stopping/certification criterion, not a promised or fabricated result. Final discriminator training, rollout benchmarking, pictures, and packaging remain blocked unless the selected deterministic validation metrics reach the target or the user explicitly overrides that guard.
+
+This is basic RRT with learned steering, not RRT*. It does not claim RRT* rewiring or asymptotic optimality. Euclidean path length is reported separately from the original paper's LQR state-control objective.
+
+Benchmark solve rates include only valid, nontrivial scenarios. Invalid starts, invalid goals, and rows already inside the goal radius are counted in a separate eligibility report and cannot lower or inflate planner success.
+
+For the testing split, a paired classical basic-RRT ablation uses the same rows and seeds with direct sample steering and no neural inference. This measures whether learned steering improves solve rate, path length, or runtime.

@@ -1,0 +1,10 @@
+split,difficulty,cases,value
+training,easy,100,80.96537001897534
+training,medium,100,87.9118953026408
+training,hard,100,88.47833682739343
+validation,easy,100,79.16624093184836
+validation,medium,100,89.44555778223113
+validation,hard,100,88.02956478652243
+testing,easy,100,82.75948730836893
+testing,medium,100,86.30414459333126
+testing,hard,100,86.17750690410438

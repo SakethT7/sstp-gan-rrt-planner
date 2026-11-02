@@ -1,0 +1,7 @@
+REAL WORLD IMPACT
+
+Robots need to plan safe motion through obstacles while respecting physical motion limits. Pure random search can waste samples, and pure neural prediction can be unsafe.
+
+This project combines both approaches. The GAN proposes expert-like motions learned from strict sample-conditioned LQR-CBF basic-RRT expansions. The RRT planner checks every proposal with full-edge collision and kinodynamic constraints.
+
+Potential applications include mobile robots, robot arms, warehouse robots, drones, search-and-rescue robots, and space rovers.

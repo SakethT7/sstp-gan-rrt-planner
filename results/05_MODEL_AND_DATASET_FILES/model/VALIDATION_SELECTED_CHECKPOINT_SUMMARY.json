@@ -1,0 +1,10 @@
+{
+  "selected_epoch": 30,
+  "selected_phase": "supervised",
+  "selection_score": 100100100099.99998,
+  "deterministic_position_accuracy_percent": 100.0,
+  "deterministic_velocity_accuracy_percent": 100.0,
+  "deterministic_full_state_accuracy_percent": 100.0,
+  "deployable_validation_target_reached": true,
+  "packaged_model_file": "v7_7_invariant_constraint_rrt_sample_gan_model.pt"
+}

@@ -1,0 +1,38 @@
+{
+  "training": {
+    "rows": 48000,
+    "condition_schema": "[parent_x,parent_y,parent_vx,parent_vy,sample_x,sample_y,absolute_obstacle_x_y_r...]",
+    "positive_progress_percent": 86.25,
+    "nonnegative_progress_percent": 86.42083333333333,
+    "mean_expert_progress_to_conditioned_target": 0.005191177595406771,
+    "p05_expert_progress_to_conditioned_target": -0.0015774015337228775,
+    "target_x_min": 0.016033340245485306,
+    "target_x_max": 0.9839901924133301,
+    "target_y_min": 0.01602090522646904,
+    "target_y_max": 0.9839837551116943
+  },
+  "validation": {
+    "rows": 6000,
+    "condition_schema": "[parent_x,parent_y,parent_vx,parent_vy,sample_x,sample_y,absolute_obstacle_x_y_r...]",
+    "positive_progress_percent": 86.88333333333334,
+    "nonnegative_progress_percent": 86.88333333333334,
+    "mean_expert_progress_to_conditioned_target": 0.005367926321923733,
+    "p05_expert_progress_to_conditioned_target": -0.0017300110775977373,
+    "target_x_min": 0.01636614091694355,
+    "target_x_max": 0.9839732646942139,
+    "target_y_min": 0.016201166436076164,
+    "target_y_max": 0.9834873676300049
+  },
+  "testing": {
+    "rows": 6000,
+    "condition_schema": "[parent_x,parent_y,parent_vx,parent_vy,sample_x,sample_y,absolute_obstacle_x_y_r...]",
+    "positive_progress_percent": 87.26666666666667,
+    "nonnegative_progress_percent": 87.48333333333333,
+    "mean_expert_progress_to_conditioned_target": 0.005158091429620981,
+    "p05_expert_progress_to_conditioned_target": -0.0017511454643681645,
+    "target_x_min": 0.016412731260061264,
+    "target_x_max": 0.9838215112686157,
+    "target_y_min": 0.016042210161685944,
+    "target_y_max": 0.9839312434196472
+  }
+}

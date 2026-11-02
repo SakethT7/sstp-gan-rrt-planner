@@ -1,0 +1,49 @@
+{
+  "state_order": "[normalized_x, normalized_y, normalized_vx, normalized_vy]",
+  "full_state_accuracy": "percentage of rows whose four-component Euclidean state error is <= 0.1; mixed normalized units",
+  "position_accuracy": "percentage of rows whose 2D Euclidean position error is <= 0.05 normalized workspace units",
+  "velocity_accuracy": "percentage of rows whose 2D Euclidean velocity error is <= 0.05 normalized velocity units",
+  "control_increment_accuracy_at_0_05": "diagnostic percentage whose recovered two-component one-step normalized velocity-increment error is <= 0.05; the increment is recovered from delta_position and parent_velocity using the exact constant-acceleration equation",
+  "configured_thresholds_normalized": {
+    "full_state": 0.1,
+    "position": 0.05,
+    "velocity": 0.05
+  },
+  "configured_thresholds_physical": {
+    "full_state": "not a single physical unit; combines normalized position and velocity",
+    "position_distance": 2.5,
+    "velocity_distance": 0.30000000000000004
+  },
+  "planner_success_and_safety": {
+    "goal_radius_normalized": 0.0405,
+    "goal_radius_physical_distance": 2.025,
+    "combined_robot_and_safety_margin_normalized": 0.016,
+    "combined_robot_and_safety_margin_physical_distance": 0.8,
+    "workspace_boundary_is_shrunk_by_collision_margin": true,
+    "expert_continuous_edge_safety_schema": "constant_acceleration_curve_bound_plus_swept_chord",
+    "expert_supervision_lookahead_steps": 1,
+    "runtime_effective_dt_normalized": 0.014399999678134918
+  },
+  "position_scale_physical_units_per_normalized_unit": 50.0,
+  "velocity_scale_physical_units_per_normalized_unit": 6.0,
+  "mse_definition": "mean squared component error over all rows and all four state components",
+  "deterministic_definition": "single zero-noise output used as the deployable prediction metric",
+  "bestof_definition": "oracle diagnostic: generate candidate_count outputs and use the true label afterward to select the closest; never a deployable selector",
+  "additional_fixed_thresholds_normalized": {
+    "full_state": [
+      0.05,
+      0.1
+    ],
+    "position": [
+      0.005,
+      0.01,
+      0.025,
+      0.05
+    ],
+    "velocity": [
+      0.025,
+      0.05,
+      0.1
+    ]
+  }
+}

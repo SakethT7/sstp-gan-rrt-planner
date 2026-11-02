@@ -1,0 +1,4 @@
+split,position_accuracy_at_0_005_percent,position_accuracy_at_0_01_percent,position_accuracy_at_0_025_percent,position_accuracy_at_0_05_percent
+training,100.0,100.0,100.0,100.0
+validation,100.0,100.0,100.0,100.0
+testing,100.0,100.0,100.0,100.0

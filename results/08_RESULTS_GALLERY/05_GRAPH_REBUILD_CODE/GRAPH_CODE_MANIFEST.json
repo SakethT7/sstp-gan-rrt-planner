@@ -1,0 +1,13 @@
+{
+  "purpose": "Exact source used for this graph-only replacement",
+  "files": [
+    {
+      "file": "build_v7_7_results_gallery.py",
+      "sha256": "06a79ac59cc9977f8eafbc54226bd4047e549cb4037afd65dfe882068f96a378"
+    },
+    {
+      "file": "rebuild_v7_7_graphs_only.py",
+      "sha256": "98ce3e5b1bcf5d63bfdb542c7a81b8b7c2cdd820b67be8f0e6fb79ada2dcc673"
+    }
+  ]
+}

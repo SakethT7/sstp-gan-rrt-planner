@@ -1,0 +1,7 @@
+split,quantity,mean
+training,Attempts,1.0266666666666666
+validation,Attempts,1.02
+testing,Attempts,1.02
+training,Total iterations,280.35
+validation,Total iterations,226.52
+testing,Total iterations,284.49333333333334

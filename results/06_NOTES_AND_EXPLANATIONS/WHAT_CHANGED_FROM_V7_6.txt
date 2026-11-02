@@ -1,0 +1,25 @@
+WHAT CHANGED FROM V7.6 TO V7.7
+
+The V7.6 diagnostic isolated environment overfitting. During 300 additional
+epochs, training strict-velocity accuracy stayed near 99.93% and training mean
+velocity error fell from 0.00286 to 0.00050. Held-out validation strict-velocity
+accuracy stayed near 77%, and the validation-selected result occurred at epoch
+1. More hard mining therefore made memorization stronger without improving
+generalization.
+
+Source review found the direct shortcut: the old trunk still consumed the six
+raw normalized parent/velocity/sample fields, including absolute parent and
+sample coordinates, despite a comment describing the input as relative-only.
+Its large ordered-obstacle MLP could also memorize obstacle arrangements.
+
+V7.7 removes that architecture instead of fine-tuning it. It starts from random
+weights, never imports V7.5/V7.6 generator weights, and exposes only relative
+sample-frame motion plus physically meaningful LQR/CBF constraint tokens to
+learned layers. Shared token encoding and set pooling make obstacle ordering
+irrelevant. Reflection parity averaging and the sample frame enforce square
+symmetry, while exact D4 training augmentation balances all orientations.
+
+The model is substantially smaller, adds AdamW weight decay, and disables hard-
+example oversampling by default. The deterministic deployable output still
+controls validation selection. Testing remains untouched until finalization.
+Reaching 98% remains an experimental target and is never manufactured.
